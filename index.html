@@ -2,18 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Abrizal — AI Experiments & Viral Tools</title>
-  <meta name="description" content="Abrizal is a digital experimentation studio exploring AI tools, viral mechanics, and modern internet projects.">
+  <title>Abrizal — Post-Human Experiments</title>
+  <meta name="description" content="Abrizal is a post-human experimentation studio exploring intelligence, removal, and modern systems.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial, sans-serif; text-align:center; padding:50px; background:#f5f5f5; color:#222; }
-    h1 { font-size:3em; margin-bottom:0.2em; }
-    p { font-size:1.2em; line-height:1.5em; max-width:600px; margin:20px auto; }
-    .button { display:inline-block; padding:12px 25px; background:#222; color:#fff; text-decoration:none; border-radius:5px; margin-top:20px; }
-    .small { font-size:0.9em; color:#555; margin-top:40px; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      background: #0b0b0b;
+      color: #e6e6e6;
+    }
+    h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      margin-top: 40px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      max-width: 600px;
+      margin: 20px auto;
+      color: #bdbdbd;
+    }
+    input {
+      padding: 12px;
+      width: 320px;
+      background: #111;
+      border: 1px solid #333;
+      color: #fff;
+    }
+    button {
+      padding: 12px 25px;
+      background: #000;
+      color: #fff;
+      border: 1px solid #444;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 40px;
+      font-size: 1.2em;
+    }
+    hr {
+      max-width: 400px;
+      margin: 40px auto;
+      border: 1px solid #222;
+    }
   </style>
 </head>
-  <script>
+
+<body>
+
+<h1>ABRIZAL</h1>
+
+<p>
+A post-human experimentation studio.<br>
+We simulate decisions intelligence would make without human bias.
+</p>
+
+<hr>
+
+<h2>If AI Were in Charge</h2>
+
+<p>
+Enter anything. Abrizal will decide its fate.
+</p>
+
+<input id="input" placeholder="Enter a concept, trend, platform, job...">
+<br><br>
+
+<button onclick="judge()">Submit</button>
+
+<div id="output"></div>
+
+<p style="margin-top:60px;font-size:0.9em;color:#666;">
+Abrizal is an experimental system.<br>
+Interpretation is left to the observer.
+</p>
+
+<script>
 function judge() {
   const input = document.getElementById("input").value;
   if (!input) return;
@@ -42,35 +114,6 @@ function judge() {
   `;
 }
 </script>
-
-<body>
-<h1>ABRIZAL</h1>
-
-<p>
-A post-human experimentation studio.<br>
-We simulate decisions intelligence would make without human bias.
-</p>
-
-<hr style="max-width:400px;margin:40px auto;border:1px solid #333;">
-
-<h2>If AI Were in Charge</h2>
-
-<p style="max-width:500px;margin:auto;">
-Enter anything. Abrizal will decide its fate.
-</p>
-
-<input id="input" placeholder="Enter a concept, trend, platform, job..." style="padding:10px;width:300px;margin-top:20px;">
-<br><br>
-<button onclick="judge()" style="padding:10px 20px;background:#000;color:#fff;border:1px solid #444;">
-Submit
-</button>
-
-<div id="output" style="margin-top:40px;font-size:1.1em;"></div>
-
-<p style="margin-top:60px;font-size:0.9em;color:#666;">
-Abrizal is an experimental system.<br>
-Interpretation is left to the observer.
-</p>
 
 </body>
 </html>
