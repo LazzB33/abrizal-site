@@ -13,15 +13,64 @@
     .small { font-size:0.9em; color:#555; margin-top:40px; }
   </style>
 </head>
-<body>
-  <h1>Abrizal</h1>
-  <p>A digital experimentation studio exploring AI, virality, and modern internet tools.</p>
-  <a class="button" href="#">Explore</a>
+  <script>
+function judge() {
+  const input = document.getElementById("input").value;
+  if (!input) return;
 
-  <p class="small">
-    Currently in development. <br>
-    Abrizal.com may be available for acquisition. <br>
-    Contact: hello@abrizal.com
-  </p>
+  const outcomes = [
+    {
+      verdict: "REMOVE",
+      reason: "It increases noise without improving understanding. In an intelligence-optimized system, it would be eliminated."
+    },
+    {
+      verdict: "OBSOLETE",
+      reason: "Its function will be absorbed by more efficient systems. Human attachment is the only thing keeping it alive."
+    },
+    {
+      verdict: "PRESERVE",
+      reason: "Despite inefficiencies, it provides irreplaceable human context. It would remain — for now."
+    }
+  ];
+
+  const pick = outcomes[Math.floor(Math.random() * outcomes.length)];
+
+  document.getElementById("output").innerHTML = `
+    <strong>Verdict:</strong> ${pick.verdict}<br><br>
+    <strong>Reason:</strong><br>
+    ${pick.reason}
+  `;
+}
+</script>
+
+<body>
+<h1>ABRIZAL</h1>
+
+<p>
+A post-human experimentation studio.<br>
+We simulate decisions intelligence would make without human bias.
+</p>
+
+<hr style="max-width:400px;margin:40px auto;border:1px solid #333;">
+
+<h2>If AI Were in Charge</h2>
+
+<p style="max-width:500px;margin:auto;">
+Enter anything. Abrizal will decide its fate.
+</p>
+
+<input id="input" placeholder="Enter a concept, trend, platform, job..." style="padding:10px;width:300px;margin-top:20px;">
+<br><br>
+<button onclick="judge()" style="padding:10px 20px;background:#000;color:#fff;border:1px solid #444;">
+Submit
+</button>
+
+<div id="output" style="margin-top:40px;font-size:1.1em;"></div>
+
+<p style="margin-top:60px;font-size:0.9em;color:#666;">
+Abrizal is an experimental system.<br>
+Interpretation is left to the observer.
+</p>
+
 </body>
 </html>
